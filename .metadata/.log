@@ -216,3 +216,266 @@ Caused by: java.lang.ClassCastException: org.eclipse.egit.ui.internal.repository
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
 	... 37 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-04-01 16:03:22.932
+!MESSAGE Error restoring branch-project associations
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:115)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\sava\Documents\GitHub\mamn01\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-04-01 16:03:26.639
+!MESSAGE Error restoring branch-project associations
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:115)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\sava\Documents\GitHub\mamn01\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-04-01 16:03:35.156
+!MESSAGE Error restoring branch-project associations
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:115)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\sava\Documents\GitHub\mamn01\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-04-01 16:06:32.415
+!MESSAGE Error restoring branch-project associations
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:115)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\sava\Documents\GitHub\mamn01\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2014-04-01 16:51:01.646
+!MESSAGE Failed to open search index.
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-04-01 16:54:29.805
+!MESSAGE Error restoring branch-project associations
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:115)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:156)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:119)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:91)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:111)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:269)
+	at org.eclipse.egit.ui.internal.branch.BranchProjectTracker.restore(BranchProjectTracker.java:230)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1$2.postExecute(BranchOperationUI.java:194)
+	at org.eclipse.egit.core.op.BaseOperation.postExecute(BaseOperation.java:59)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:156)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:162)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$1.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: OK
+Contains: C:\Users\sava\Documents\GitHub\mamn01\appcompat_v7 overlaps the location of another project: 'appcompat_v7'
